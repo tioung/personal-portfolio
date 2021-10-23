@@ -1,0 +1,44 @@
+#navbar{
+    // visibility: hidden;
+    background-color: $very_dark_gray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2em;
+    display: flex;
+    justify-content: flex-end;
+
+    ul{
+        display: flex;
+        // background-color: white;
+    }
+
+    li{
+        margin-left: 2em;
+    }
+
+    a{
+        color:$blanc_casse;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        opacity: 0.9;
+        transition: opacity 200ms ease-in-out;
+    }
+
+    a:hover{
+        opacity: 1;
+        color: $blanc;
+    }
+}
+
+#welcome-section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
