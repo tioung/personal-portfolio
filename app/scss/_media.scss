@@ -1,5 +1,20 @@
 @media (max-width: 800px){
     #navbar{
-        background-color: red;
+        // background-color: red;
+        justify-content: center;
+
+        ul{
+            display: block;
+            text-align: center;
+
+            li{
+                margin: 2em;
+
+                a{
+                    font-size: 1.3rem;
+                }
+            }
+        }
     }
+    
 }

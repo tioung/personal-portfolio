@@ -4,6 +4,7 @@
   list-style: none;
   text-decoration: none;
   letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 *, *::before, *::after {
@@ -33,6 +34,8 @@ a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+          box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
 
 #navbar ul {
@@ -64,6 +67,10 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -72,9 +79,67 @@ a {
           align-items: center;
 }
 
+#welcome-section h1 {
+  text-transform: uppercase;
+}
+
+#welcome-section p {
+  text-transform: capitalize;
+  margin: 0.5em;
+}
+
+#projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#projects .project-tiles {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 500px 500px;
+      grid-template-columns: 500px 500px;
+}
+
+#projects .project-tiles .project-tile {
+  background-color: lightblue;
+  margin: 1em;
+}
+
+#projects .project-tiles .project-tile img {
+  max-width: 100%;
+}
+
+#projects .project-tiles .project-tile div {
+  text-align: center;
+  padding: 0.5em;
+}
+
 @media (max-width: 800px) {
   #navbar {
-    background-color: red;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #navbar ul {
+    display: block;
+    text-align: center;
+  }
+  #navbar ul li {
+    margin: 2em;
+  }
+  #navbar ul li a {
+    font-size: 1.3rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

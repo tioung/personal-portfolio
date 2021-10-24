@@ -8,6 +8,7 @@
     padding: 2em;
     display: flex;
     justify-content: flex-end;
+    box-shadow: 0 1px 5px rgba(104,104,104,0.8);
 
     ul{
         display: flex;
@@ -35,9 +36,54 @@
 #welcome-section{
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    // text-shadow: $text-shadow;
+
+    h1{
+        text-transform: uppercase;
+        
+    }
+
+    p{
+        text-transform: capitalize;
+        margin: 0.5em;
+    }
 }
+
+#projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .project-tiles{
+        // border: 2px solid red;
+        display: grid;
+        grid-template-columns: 500px 500px;
+
+        .project-tile{
+            background-color: lightblue;
+            // border: 1px solid green;
+            margin: 1em;
+
+            img{
+                max-width: 100%;
+            }
+
+            div{
+                text-align: center;
+                padding: 0.5em;
+                // box-shadow: $box-shadow;
+            }
+        }
+    }
+}
+
+
+
+
 
 
 
